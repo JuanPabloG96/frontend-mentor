@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root{
+  --Light-Bg: hsl(0, 0%, 98%);
+  --Dark-Bg: hsl(240, 22%, 13%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+}
+#app{
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Dark-Bg);
+  background-image: url('../assets/images/bg-mobile-dark.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

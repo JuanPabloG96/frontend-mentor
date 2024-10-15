@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+:root {
+    /* Primary colors */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    /* Secondary colors */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.article__container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text__container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.text__title {
+    font-weight: 300;
+    color: var(--Very-Dark-Blue);
+}
+
+.title__accent {
+    font-weight: 600;
+}
+
+.card__container {
+    display: grid;
+    grid-template-rows: 1fr calc(2fr+20px) 1fr;
+    gap: 20px;
+    place-content: center;
+}
+
+.card {
+    max-width: 350px;
+    display: grid;
+    grid-template-rows: 5px 1fr;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px 2px rgba(88, 166, 219, 0.389);
+    overflow: hidden;
+}
+
+.card__one {
+    background-color: var(--Cyan);
+}
+
+.card__two {
+    background-color: var(--Red);
+}
+
+.card__three {
+    background-color: var(--Orange);
+}
+
+.card__four {
+    background-color: var(--Blue);
+}
+
+.card__second {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__title {
+    color: var(--Very-Dark-Blue);
+}
+
+.card__paragraph {
+    font-size: 12px;
+}
+
+.img__container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+}
+
+img {
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .text__container {
+        max-width: 500px;
+        margin: 70px auto;
+    }
+
+    .text__title {
+        font-size: 32px;
+    }
+
+    .card__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        place-content: center;
+        margin: 0 auto;
+    }
+
+    .sub-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        max-height: 210px;
+        max-width: 300px;
+        margin: auto;
+    }
+}

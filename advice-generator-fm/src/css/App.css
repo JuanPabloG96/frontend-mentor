@@ -1,0 +1,49 @@
+:root {
+  /* COLORS */
+
+  /* Primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+.fm-advice-card{
+  margin-left: 30px;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  position: relative;
+  padding: 40px 30px 60px;
+  border-radius: 10px;
+  color: var(--Light-Cyan);
+  background-color: var(--Dark-Grayish-Blue);
+}
+.fm-advice-number{
+  text-transform: uppercase;
+  color: var(--Neon-Green);
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+}
+.fm-advice-randomize-button{
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: -35px;
+  left: calc(50% - 35px);
+  background-color: var(--Neon-Green);
+  color: var(--Dark-Blue);
+  cursor: pointer;
+}
+.fm-advice-randomize-button:active{
+  box-shadow: 0 0 20px var(--Neon-Green);
+}

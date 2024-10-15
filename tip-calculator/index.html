@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Tip Calculator: An interactive tool to quickly and easily calculate tips. Enter the bill amount and tip percentage to get the total amount to pay, including the tip. Learn how much to tip fairly with this handy tip calculator.">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <h1 class="title">
+        <img src="images/logo.svg" alt="SPLITTER logo" class="logo">
+      </h1>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="tip-calculator">
+
+      <section class="tip-calculator__input">
+
+        <div class="container">
+          <label for="bill" class="input-section-title">Bill</label>
+          <div class="input-container">
+            <img src="images/icon-dollar.svg" alt="dollar icon">
+            <input type="number" name="bill" id="bill" class="focus-input" onchange="calculateTip()">
+          </div>
+        </div>
+
+        <div class="container">
+          <label for="percentage" class="input-section-title">Select Tip %</label>
+          <fieldset class="grid-container" id="percentage">
+            <button class="btn btn__percent">5%</button>
+            <button class="btn btn__percent">10%</button>
+            <button class="btn btn__percent btn-active">15%</button>
+            <button class="btn btn__percent">25%</button>
+            <button class="btn btn__percent">50%</button>
+            <input type="number" name="custom" id="custom" placeholder="Custom" onchange="calculateTip()">
+          </fieldset>
+        </div>
+
+        <div class="container">
+          <div class="container__custom">
+            <label for="people" class="input-section-title">Number of People</label>
+            <span class="error-msg" hidden>Can't be zero</span>
+          </div>
+          <div class="input-container">
+            <img src="images/icon-person.svg" alt="person icon">
+            <input type="number" name="people" id="people" class="focus-input" onchange="calculateTip()">
+          </div>
+        </div>
+      </section>
+
+      <section class="tip-calculator__output">
+        <div class="results">
+          <article class="results__container">
+            <div class="container">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <output class="tip-output">$0.00</output>
+          </article>
+          <article class="results__container total">
+            <div class="container">
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <output class="total-output">$0.00</output>
+          </article>
+        </div>
+        <button class="btn btn__reset">reset</button>
+      </section>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/JuanPabloG96/" target="_blank">JuanPabloG96</a>.
+    </div>
+  </footer>
+
+  <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>

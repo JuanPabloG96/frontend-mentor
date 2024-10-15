@@ -1,0 +1,122 @@
+{
+  "mediaData": [
+    {
+      "id": 1,
+      "title": "FOLLOWERS",
+      "socialMediaName": "facebook",
+      "socialMediaIcon": "images/icon-facebook.svg",
+      "username": "nathanf",
+      "count": "1987",
+      "status": "green",
+      "statusNumber": "12 Today",
+      "statusIcon": "images/icon-up.svg"
+    },
+    {
+      "id": 2,
+      "title": "FOLLOWERS",
+      "socialMediaName": "twitter",
+      "socialMediaIcon": "images/icon-twitter.svg",
+      "username": "nathanf",
+      "count": "1044",
+      "status": "green",
+      "statusNumber": "99 Today",
+      "statusIcon": "images/icon-up.svg"
+    },
+    {
+      "id": 3,
+      "title": "FOLLOWERS",
+      "socialMediaName": "instagram",
+      "socialMediaIcon": "images/icon-instagram.svg",
+      "username": "realnathanf",
+      "count": "11k",
+      "status": "green",
+      "statusNumber": "1099 Today",
+      "statusIcon": "images/icon-up.svg"
+    },
+    {
+      "id": 4,
+      "title": "SUBSCRIBERS",
+      "socialMediaName": "youtube",
+      "socialMediaIcon": "images/icon-youtube.svg",
+      "username": "Nathan F.",
+      "count": "8239",
+      "status": "red",
+      "statusNumber": "144 Today",
+      "statusIcon": "images/icon-down.svg"
+    }
+  ],
+  "overviewData": [
+    {
+      "id": 1,
+      "title": "Page Views",
+      "socialMediaIcon": "images/icon-facebook.svg",
+      "count": "87",
+      "status": "green",
+      "statusNumber": "3",
+      "statusIcon": "images/icon-up.svg"
+    },
+    {
+      "id": 2,
+      "title": "Likes",
+      "socialMediaIcon": "images/icon-facebook.svg",
+      "count": "52",
+      "status": "red",
+      "statusNumber": "2",
+      "statusIcon": "images/icon-down.svg"
+    },
+    {
+      "id": 3,
+      "title": "Likes",
+      "socialMediaIcon": "images/icon-instagram.svg",
+      "count": "5462",
+      "status": "green",
+      "statusNumber": "2257",
+      "statusIcon": "images/icon-up.svg"
+    },
+    {
+      "id": 4,
+      "title": "Profile Views",
+      "socialMediaIcon": "images/icon-instagram.svg",
+      "count": "52k",
+      "status": "green",
+      "statusNumber": "1375",
+      "statusIcon": "images/icon-up.svg"
+    },
+    {
+      "id": 5,
+      "title": "Retweets",
+      "socialMediaIcon": "images/icon-twitter.svg",
+      "count": "117",
+      "status": "green",
+      "statusNumber": "303",
+      "statusIcon": "images/icon-up.svg"
+    },
+    {
+      "id": 6,
+      "title": "Likes",
+      "socialMediaIcon": "images/icon-twitter.svg",
+      "count": "507",
+      "status": "green",
+      "statusNumber": "553",
+      "statusIcon": "images/icon-up.svg"
+    },
+    {
+      "id": 7,
+      "title": "Likes",
+      "socialMediaIcon": "images/icon-youtube.svg",
+      "count": "107",
+      "status": "red",
+      "statusNumber": "19",
+      "statusIcon": "images/icon-down.svg"
+    },
+    {
+      "id": 8,
+      "title": "Total Views",
+      "socialMediaIcon": "images/icon-youtube.svg",
+      "count": "1407",
+      "status": "red",
+      "statusNumber": "12",
+      "statusIcon": "images/icon-down.svg"
+    }
+  ]
+}

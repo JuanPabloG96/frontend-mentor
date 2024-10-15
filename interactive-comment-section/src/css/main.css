@@ -1,0 +1,29 @@
+:root{
+  --bg-gray: #2d2d2d;
+  --text-color: #dfdfdf;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-color: var(--bg-gray);
+  color: var(--text-color);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+footer{
+  margin-top: auto;
+}
+.attribution{
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Light-Dark-Blue: hsl(213, 18%, 22%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    color: var(--Light-Grey);
+    background-color: var(--Very-Dark-Blue);
+}
+
+a {
+    color: var(--Orange);
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    height: 420px;
+    padding: 30px;
+    border-radius: 30px;
+
+    background-color: var(--Dark-Blue);
+
+    display: grid;
+    place-items: center;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.card-back {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-back .text {
+    text-align: center;
+}
+
+.star-icon,
+.btn-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    display: grid;
+    place-items: center;
+
+    font-weight: 700;
+    color: var(--Light-Grey);
+    background-color: var(--Light-Dark-Blue);
+}
+
+.btn-number:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.isSelected {
+    color: var(--White);
+    background-color: var(--Medium-Grey);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subtitle {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=submit] {
+    padding: 15px;
+    border: none;
+    border-radius: 15em;
+    color: var(--White);
+    background-color: var(--Orange);
+
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+input[type=submit]:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+    cursor: pointer;
+}
+
+.choose {
+    padding: 8px 20px;
+    color: var(--Orange);
+    background-color: var(--Light-Dark-Blue);
+    border-radius: 15em;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

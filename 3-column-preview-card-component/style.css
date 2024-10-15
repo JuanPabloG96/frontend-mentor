@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:wght@100;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Poppins:wght@100;300;400;600;700&display=swap');
+
+
+:root {
+    /*Colors*/
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*paragraphs*/
+    --Very-light-gray: hsl(0, 0%, 95%);
+    /*(background, headings, buttons)*/
+
+    /*Fonts*/
+    --title-font: 'Big Shoulders Display', sans-serif;
+    --text-font: 'Lexend Deca', sans-serif;
+}
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 15px;
+    min-height: 100vh;
+    font-family: var(--text-font);
+    display: grid;
+    place-items: center;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 85%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.card-sedan {
+    background-color: var(--Bright-orange);
+}
+
+.card-suv {
+    background-color: var(--Dark-cyan);
+}
+
+.card-luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.card-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    font-size: 32px;
+}
+
+.card-paragraph {
+    color: var(--Transparent-white);
+}
+
+.learn {
+    padding: 14px 40px;
+    background-color: #fff;
+    border-radius: 2em;
+}
+
+.learn1 {
+    color: var(--Bright-orange);
+}
+
+.learn2 {
+    color: var(--Dark-cyan);
+}
+
+.learn3 {
+    color: var(--Very-dark-cyan);
+}
+
+.learn:active {
+    padding: 12px 38px;
+    background-color: transparent;
+    border: 2px solid var(--Transparent-white);
+    color: var(--Transparent-white);
+}
+
+.attribution {
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 860px;
+        flex-direction: row;
+        margin: 0;
+    }
+}
